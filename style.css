@@ -10,6 +10,11 @@ a {
     text-decoration: none;
     color: #1E0606;
 }
+
+ul {
+    list-style-type: none;
+}
+
 .hidden {
     height: 0;
     font-size: 0;
