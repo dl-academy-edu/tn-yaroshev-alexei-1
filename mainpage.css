@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+  
+}
+
+body {
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1180px;
+    width: 100%;
+}
+
+.outline {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E0606;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 110px;
+}
+
+.button {
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 9px 22px;
+}
+
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.button:disabled {
+    background: #C1C1C1;
+}
+
+/* HEADER */
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 20px;
+    margin-bottom: 120px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: black;
+}
+
+.banner-footer-number {
+    margin-top: 17px;
+    width: 61px;
+    height: 74px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    color: rgba(30, 6, 6, 0.05);
+    margin-bottom: 10px;
+}
+
+h1 {
+    width: 307px;
+    height: 88px;
+    left: 243px;
+    top: 320px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    margin: 0;
+}
+
+.banner-disigned {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.banner-button {
+    max-height: 0px;
+    max-width: 0px;
+    border: 0px;
+    padding: 0;
+}
+
+.outline-banner-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.header-contact {
+    font-weight: bold;
+    margin-right: 110px;
+}
+
+.header-logo {
+    max-width: 100px;
+    width: 100%;
+    max-height: 52px;
+    height: 100%;
+    margin-right: 60px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 20px;
+    max-width: 80px;
+    width: 100%;
+}
+
+.header-search {
+    margin-left: 550px;
+    margin-right: 23px;
+}
+
+/* BANNER */
+
+.banner-middle {
+    background: #EEE4DB;
+    display: flex;
+    max-width: 1180px;
+    width: 100%;
+    max-height: 411px;
+    height: 100%;
+    margin-left: 110px;
+}
+
+.banner-logo {
+    position: relative;
+    top: -45px;
+    max-width: 626px;
+    width: 100%;
+    max-height: 461px;
+    
+}
+
+.banner-middle-number {
+    margin: 17px 44px 0 30px;
+}
+
+.banner-list {
+    padding-left: 0;
+}
+
+.banner-middle-title {
+    margin: 89px 5px 0 0;
+}
+
+.banner-footer {
+    width: 1180px;
+height: 39px;
+left: 110px;
+top: 603px;
+
+background: #C29974;
+}
+
+.banner-footer-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* BANNER */
+
+.service-package-1 {
+    background-image: url(Images/image-1.png);
+    background-color: #DBE4DB;
+    background-repeat: no-repeat;
+    max-width: 244px;
+    max-height: 177px;
+    padding: 65px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;  
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #434343;
+    padding: 100px 110px 100px 110px;
+}
+
+h4 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+    
+    
+}
+
+.footer-tables {
+    display: flex;
+}
+
+.footer-customer {
+    margin-right: 160px;
+    margin-left: 180px;
+}
+
+.footer-button {
+    background: #000000;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+
+
+    
+
+

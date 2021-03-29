@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 480px;
+    max-height: 559px;
+}
+
+.outline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    background: #000000;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 16px;
+    max-width: 161px;
+    width: 100%;
+    text-align: center;
+    padding: 9px;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+}
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.button:disabled {
+    background: #C1C1C1;
+    color: #E1E1E1;
+}
+
+/* HEADER */
+
+.header {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header-logo {
+    max-width: 100px;
+    margin-left: 110px;
+}
+
+.header-nav {
+    margin: 0 auto 0 60px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-item {
+    margin-right: 20px;
+    top: 42px;
+}
+
+.header-item:hover {
+    top: 173px;
+}
+
+
+.header-search {
+    margin-right: 24px;
+}
+
+/* TOYS */
+
+.toys-sidebar {
+    background: rgba(125, 151, 218, 0.2);;
+}
+
+.toys-title {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 110px;
+}
+
+.toys-name {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 110px;
+    padding-left: 0;
+}
+
+.toys-arrow {
+    width: 8px;
+    height: 12px;
+    left: 180px;
+    top: 233px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.toys-links {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+}
+
+.toys-text {
+    font-family: 'Crimson Text', serif;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.toys-sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.toys-cost {
+    margin-left: 115px;
+    margin-right: 108px;
+}
+
+.toys-color {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: 130px;
+}
+
+.toys-delivery {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: 69px;
+}
+
+.toys-amount {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    margin-right: 60px;
+}
+
+.toys-products-1,
+.toys-products-2 {
+    margin-right: 0;
+    display: flex;
+    padding-left: 110px ;
+}

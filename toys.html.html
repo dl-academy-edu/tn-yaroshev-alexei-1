@@ -2,44 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main page</title>
+    <title>Toys</title>
+    <link rel="stylesheet" href="toys.css">
 </head> 
 <body>
-    <header>
+    <header class="header container">
         <a href="#"> 
-            <img src="images/logo.png" alt="" class="logo"> 
+            <img src="images/logo.png" alt="" class="header-logo"> 
         </a>
-        <nav>
-            <ul>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CATALOG</a></li>
-                <li><a href="#">ABOUT US</a></li>
+        <nav class="header-nav">
+            <ul class="outline header-list">
+                <li><a href="#" class="header-item">BLOG</a></li>
+                <li><a href="#" class="header-item">CATALOG</a></li>
+                <li><a href="#" class="header-item">ABOUT US</a></li>
             </ul>
         </nav>
-        <input type="submit">
-        <a href="#" class="button">CONTACT US</a>
+        <a href="#" class="header-search"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.3651 0.26001C7.94509 0.26001 5.16509 3.08001 5.16509 6.52001C5.16509 7.98001 5.6651 9.30002 6.4851 10.38L0.605098 16.32C0.265098 16.68 0.265098 17.24 0.605098 17.58C0.785098 17.76 1.0051 17.84 1.2251 17.84C1.4651 17.84 1.6851 17.76 1.8651 17.58L7.7451 11.62C8.7651 12.36 10.0051 12.78 11.3451 12.78C14.7651 12.78 17.5451 9.96001 17.5451 6.52001C17.5651 3.06001 14.7851 0.26001 11.3651 0.26001ZM11.3651 11.2C8.82509 11.2 6.76509 9.10001 6.76509 6.52001C6.76509 3.94001 8.82509 1.84001 11.3651 1.84001C13.9051 1.84001 15.9651 3.94001 15.9651 6.52001C15.9651 9.10001 13.9051 11.2 11.3651 11.2ZM14.4651 6.60001C14.4251 6.94001 14.1251 7.20001 13.7851 7.20001C13.7451 7.20001 13.7251 7.20001 13.6851 7.20001C13.3051 7.14001 13.0451 6.80001 13.0851 6.42001C13.2251 5.38001 12.0651 4.84001 12.0051 4.82001C11.6651 4.66001 11.5051 4.24001 11.6651 3.90001C11.8251 3.56001 12.2251 3.40001 12.5851 3.54001C12.6651 3.56001 14.7451 4.52001 14.4651 6.60001ZM13.0051 8.12001C13.1451 8.26001 13.2451 8.48002 13.2451 8.68002C13.2451 8.90002 13.1651 9.10001 13.0051 9.24002C12.8651 9.38002 12.6451 9.48002 12.4451 9.48002C12.2451 9.48002 12.0251 9.40001 11.8851 9.24002C11.7451 9.10001 11.6451 8.88002 11.6451 8.68002C11.6451 8.48002 11.7251 8.26001 11.8851 8.12001C12.0251 7.98001 12.2451 7.88002 12.4451 7.88002C12.6451 7.88002 12.8451 7.96001 13.0051 8.12001Z" fill="#1E0606"/>
+            </svg>
+        </a>
+        <a href="#" class="header-contact">CONTACT US</a>
     </header>
     <main>
-    <section class="toys" class="#">
-        <h1>Toy for kids</h1>
-        <a href="#">Home</a>
-        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
-            </svg>
-        <a href="#">Catalog</a>  
-        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
-            </svg>
-        <a href="#">Toys</a>  
-        <sidebar>
-            <div class="cost">
+    <section>
+        <h1 class="toys-title">Toy for kids</h1>
+        <div>
+            <nav>
+                <ul class="toys-name">
+                    <li><a href="#" class="toys-links">Home</a></li>
+                    <li><img src="Images/arrow-right.png" alt="" class="toys-arrow"></li>
+                    <li><a href="#" class="toys-links">Catalog</a></li>
+                    <li><img src="Images/arrow-right.png" alt="" class="toys-arrow"></li>
+                    <li><p class="toys-text">Toys</p></li>
+                </ul>
+            </nav>            
+        </div>
+        <sidebar class="toys-sidebar">
+            <div class="toys-cost">
                 <h2>Cost</h2>
                 <input type="range" id="start" name="price"
                     min="0" max="500" value="10">
             </div>
             <div>
                 <h2>Color</h2>
-                    <ul>
+                    <ul class="toys-color">
                         <li>
                             <label>
                                 <input name="black"
@@ -76,7 +82,7 @@
             </div>
             <div>
                 <h2>Delivery</h2>
-                <ul>
+                <ul class="toys-delivery">
                     <li>
                         <label>
                             <input name="Delivery"
@@ -97,57 +103,59 @@
             </div>
             <div>
                 <h2>Amount</h2>
-                <ul>
+                <ul class="toys-amount">
                     <li><button>0-5</button></li>
                     <li><button>10-20</button></li>
                     <li><button>20-50</button></li>
                 </ul>
             </div>
-            <div>
+            <div class="toys-apply">
                 <button>Apply</button>
             </div>
         </sidebar>
     </section>  
-    <section class="products">
-        <ul>
+    <section>
+        <ul class="toys-products-1">
             <li>
                 <img src="Images/products/products1.png" alt="">
-                <p>SHARKY BEAN BAG CHAIR COVER
+                <p class="toys-sign-1">SHARKY BEAN BAG CHAIR COVER
                     <br>
                     $60.00 USD
                 </p>
             </li>
             <li>
                 <img src="Images/products/products2.png" alt="">
-                <p>BRASS DECO FRAMES
+                <p class="toys-sign-1">BRASS DECO FRAMES
                     <br>
                     $66.00 USD
                 </p>
             </li>
             <li>
                 <img src="Images/products/products3.png" alt="">
-                <p>CIBO FULL APRON
+                <p class="toys-sign-1">CIBO FULL APRON
                     <br>
                     $60.00 USD
                 </p>
             </li>
+        </ul>
+        <ul class="toys-products-2">
             <li>
                 <img src="Images/products/products4.png" alt="">
-                <p>GATCHA GATCHA GUMBALL MACHINE
+                <p class="toys-sign-1">GATCHA GATCHA GUMBALL MACHINE
                     <br>
                     $56.00 USD
                 </p>
             </li>
             <li>
                 <img src="Images/products/products5.png" alt="">
-                <p>CHRISTMAS ADVENT SCENTED CANDLE
+                <p class="toys-sign-1">CHRISTMAS ADVENT SCENTED CANDLE
                     <br>
                     $29.00 USD
                 </p>
             </li>
             <li>
                 <img src="Images/products/products6.png" alt="">
-                <p>TANGLE SPINNING TEA LIGHT
+                <p class="toys-sign-1">TANGLE SPINNING TEA LIGHT
                     <br>
                     $56.00 USD
                 </p>
