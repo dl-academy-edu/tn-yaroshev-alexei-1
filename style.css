@@ -74,6 +74,10 @@ h3 {
    background: #C1C1C1;
 }
 
+.special {
+    background: #C1C1C1;
+}
+
 /* HEADER */
 .header {
     padding: 40px 0 129px;
@@ -112,26 +116,32 @@ h3 {
     max-width: 1180px;
     width: 100%;
     max-height: 372px;
-    margin-left: 110px;
     background: #EEE4DB;
 }
 
-.table-button {
-    padding: 0;
-    background-color: #EEE4DB;
-    max-width: 31px;
-    max-height: 3px;
-    width: 100%;
-    height: 100%;
-    border: 0px;
+.table-button-special {
+    background-image: url(Images/Rectangle\ \(active\).png);
+    height: 3px;
+    width: 31px;
     margin-bottom: 11px;
+}
+
+.table-button {
+    background-image: url(Images/Rectangle.png);
+    height: 3px;
+    width: 31px;
+    margin-bottom: 11px;
+}
+
+.table-button:hover {
+    background-image: url(Images/Rectangle\ \(active\).png);
+    height: 3px;
+    width: 31px;
 }
 
 .table-number {
     padding: 17px 44px 0 28px;
 }
-
-
 
 .number {
     font-family: 'Montserrat', sans-serif;
@@ -177,7 +187,6 @@ h3 {
     width: 100%;
     max-height: 39px;
     height: 100%;
-    margin-left:110px;
     padding: 11px 364px;
 }
 
@@ -189,9 +198,17 @@ h3 {
     color: #FFFFFF;
     font-size: 12px;
     line-height: 16px;
+    max-width: 500px;
+    width: 100%;
 }
 
 /* CATEGORY PRODUCTS */
+
+.service-title {
+    margin-top: 90px;
+    font-size: 38px;
+line-height: 46px;
+}
 
 .category {
     display: flex;
@@ -214,6 +231,10 @@ h3 {
     margin: 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
+}
+
+.service-first:hover {
+    text-decoration-line: underline;
 }
 
 .category-first {
@@ -243,6 +264,10 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.service-second:hover {
+    text-decoration-line: underline;
+}
+
 .category-second {
     max-width: 280px;
     width: 100%;
@@ -269,6 +294,10 @@ h3 {
     margin: 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
+}
+
+.service-third:hover {
+    text-decoration-line: underline;
 }
 
 .category-third {
@@ -300,6 +329,10 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.service-fourth:hover {
+    text-decoration-line: underline;
+}
+
 .category-fourth {
     max-width: 280px;
     width: 100%;
@@ -310,9 +343,6 @@ h3 {
     align-items: center;
 }
 
-
-
-
 .underservice {
     display: flex;
     align-items: center;
@@ -322,7 +352,7 @@ h3 {
     display: flex;
 }
 
-.arrow {
+.arrow1 {
     display: flex;
     background-color: rgba(112, 187, 220, 0.2);
     max-width: 37px;
@@ -340,8 +370,8 @@ h3 {
     height: 100%;
     color: #1E0606;
     font-family: 'Open Sans', sans-serif;
+    text-align: start;
 }
-
 
 
 /* ABOUT */
@@ -401,6 +431,8 @@ h3 {
 .brands-outline {
     display: flex;
     list-style-type: none;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 .brand {
@@ -501,7 +533,10 @@ footer {
     max-width: 300px;
     width: 100%;
     padding: 9px 0 9px 15px;
-    
+}
+
+#footer-searching:hover {
+    border: 1px solid #FFFDFD;
 }
 
 ::placeholder {
@@ -534,15 +569,193 @@ footer {
 .footer-rating {
     display: flex;
     align-items: center;
+    padding: 0;
+}
+
+.stars {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .star {
+    background-image: url(Images/Star.png);
+    height: 17px;
+    width: 16px;
+    margin-bottom: 11px;
+    background-repeat: no-repeat;
     margin-right: 3px;
+    margin-bottom: 0;
+    
+}
+
+.star:hover {
+    background-image: url(Images/Star_active.png);
 }
 
 .DL {
     left: -75px;
     position: relative;
+    color: #A2A2A2;
 }
 
+.DL:hover {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
 
+/* BASIC */
+
+#contact-name,
+#contact-phone,
+#contant-email,
+#message {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+#message:hover,
+#contact-name:hover,
+#contact-phone:hover,
+#contant-email:hover {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    max-width: 680px;
+    width: 100%;
+    background: #E5EAF8;
+    padding: 42px 40px;
+}
+
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 25px;
+    background: transparent;
+}
+.contact-form textarea {
+    height: auto;
+    resize: none;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 33px;
+    cursor: pointer;
+}
+
+.input {
+    display: none;
+}
+
+.checkbox label:before,
+.checkbox label:after  {
+    content: '';
+    position: absolute;
+    display: block;
+}
+
+.checkbox label:before {
+    width: 19px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    border: 2px solid #C29974;
+}
+.checkbox label:after {
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-image: url(Images/check-mark.png);
+    opacity: 0;
+}
+
+.input:checked + label:after {
+    opacity: 1;
+} 
+
+.contact-title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 97.2%;
+    text-align: center;
+    color: #00559D;
+    margin-bottom: 60px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-block {
+    max-width: 280px;
+    width: 100%;
+}
+
+.contact-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(125, 151, 218, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 680px;
+    display: none;
+}
+
+.popup-open,
+.popup-overlay-open {
+    display: block;
+}
+
+.popup-form .contact-form {
+    padding: 50px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}

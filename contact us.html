@@ -38,43 +38,38 @@
         <div class="basic">
             <div>
                 <h1 class="hidden">Modal Window</h1>
-                <form action="#" class="modal_form">
-                    <fieldset class="modal">
-                        <div class="wrapper">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Ivan Ivanov">
+                <form action="" method="POST" class="contact-form">
+                    <fieldset class="contact-wrapper">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" placeholder="Ivan Ivanov">
+                    </fieldset> 
+                    <fieldset class="contact-line">
+                        <div class="contact-wrapper contact-block">
+                            <label for="contact-phone">Phone</label>
+                            <input type="tel" id="contact-phone">    
+                        </div>
+                        <div class="contact-wrapper contact-block">
+                            <label for="contant-email">E-mail</label>
+                            <input type="email" id="contant-email">
                         </div>
                     </fieldset>
-                    <fieldset class="modal-middle">
-                        <div class="wrapper contact-block">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone">
-                        </div>
-                        <div class="wrapper contact-block">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
+                    <fieldset class="contact-wrapper">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <div class="checkbox">
+                            <input class="input" type="checkbox" id="contant-cach">
+                            <label for="contant-cach">By clicking on the button, you consent to the processing of your personal data</label>                           
                         </div>
                     </fieldset>
-                    <fieldset class="modal">
-                        <div class="wrapper">
-                            <label for="message">Message</label>
-                            <textarea id="message"></textarea>
-                        </div>
-                    </fieldset>  
-                    <fieldset class="modal">
-                        <input type="checkbox" id="personal-data">
-                        <label for="personal-data">By clicking on the button, you consent to the processing of your personal data</label>
-                    </fieldset>        
-                    <button class="button">
-                        submit
-                    </button>
+                    <button type="submit" class="button">Submit</button>
                 </form>
             </div>
             <div class="texts">
                 <p class="letter">Our support team are on-hand to assist with any issues you are experiencing.</p>
                 <p class="letter">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
                 <p class="letter special">An expert is waiting to help you!</p>
-                
             </div>
         </div>
     </section>
@@ -109,7 +104,7 @@
                 <h4 class="footer-title">Connect</h4>
                 <img src="Images/Line.png" alt="" class="line">
                 <form action="#" class="footer-search">
-                    <input type="search" placeholder="Email" class="footer-searching">
+                    <input type="search" placeholder="Email" class="footer-searching" id="footer-searching">
                     <input type="button" value="JOIN" class="button">
                 </form>
                 <ul class="outline social">
@@ -151,25 +146,37 @@
         <img src="images/Line-2.png" alt="" class="line-second">
         <div class="footer-second">
             <div class="footer-rating">
-                <h3 class="footer-link">Company Rating</h3>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                    </svg>                                      
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
+                <h3 class="footer-link rating">Company Rating</h3>
+                    <ul class="stars">
+                        <li>
+                            <div class="star">
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"></a>
+                            </div>
+                        </li>
+                    </ul>
             </div>
             <div>
-                <h3 class="footer-link copyright">Copyright © 2018 Dlk • Design Life Kids</h3>
+                <h3 class="footer-link">Copyright © 2018 Dlk • Design Life Kids</h3>
             </div>
             <div>
                 <a href="#" class="footer-title DL">Web Design — Direct Line Development</a>

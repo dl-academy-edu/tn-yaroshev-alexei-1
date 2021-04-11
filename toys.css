@@ -42,7 +42,7 @@ img {
     max-height: 385px;
     width: 100%;
     height: 100%;
-    padding: 69px;  
+    padding: 73px;  
     position: absolute;
     opacity: 90%;
     background: #E5EAF8;
@@ -51,6 +51,31 @@ img {
     height: 100%;
     max-height: 100px;
     opacity: 90%;
+    margin: 70px;
+}
+
+.picture:active::before {
+    content: 'Learn more';
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    display: block;
+    font-size: 26px;
+    line-height: 29px;  
+    max-width: 380px;
+    max-height: 385px;
+    width: 100%;
+    height: 100%;
+    padding: 73px;  
+    position: absolute;
+    opacity: 90%;
+    background: #E5EAF8;
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    opacity: 0.67;
     margin: 70px;
 }
 
@@ -187,6 +212,63 @@ h3 {
     padding: 0;
 }
 
+.check {
+    display: none;
+}
+
+.fake {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    position: relative;
+}
+
+.fake::before  {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(Images/check-mark.png);
+    opacity: 0;
+}
+
+.check:checked + .fake::before {
+    opacity: 1;
+    background-color: #FFFFFF;
+}
+
+.radios {
+    display: none;
+}
+
+.fake-radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C29974;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fake-radio::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 16px;
+    top: 12%;
+    left: 15%;
+    background-color: #C29974;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+.radios:checked + .fake-radio::before {
+    opacity: 1;
+}
 
 .delivery {
     margin-left: 130px;
@@ -222,6 +304,7 @@ h3 {
 
 .range:hover {
     background: #EDDEEB;
+    border: none;
 }
 
 .checked {
@@ -357,7 +440,11 @@ footer {
     background: #666666;
     max-width: 300px;
     width: 100%;
-    padding: 9px 0 9px 15px;  
+    padding: 9px 0 9px 15px;
+}
+
+#footer-searching:hover {
+    border: 1px solid #FFFDFD;
 }
 
 ::placeholder {
@@ -390,13 +477,39 @@ footer {
 .footer-rating {
     display: flex;
     align-items: center;
+    padding: 0;
+}
+
+.stars {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .star {
+    background-image: url(Images/Star.png);
+    height: 17px;
+    width: 16px;
+    margin-bottom: 11px;
+    background-repeat: no-repeat;
     margin-right: 3px;
+    margin-bottom: 0;
+    
+}
+
+.star:hover {
+    background-image: url(Images/Star_active.png);
 }
 
 .DL {
     left: -75px;
     position: relative;
-}   
+    color: #A2A2A2;
+}
+
+.DL:hover {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}

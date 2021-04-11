@@ -173,6 +173,10 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.service-first:hover {
+    text-decoration-line: underline;
+}
+
 .category-first {
     max-width: 280px;
     width: 100%;
@@ -198,6 +202,10 @@ h3 {
     margin: 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
+}
+
+.service-second:hover {
+    text-decoration-line: underline;
 }
 
 .category-second {
@@ -226,6 +234,10 @@ h3 {
     margin: 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
+}
+
+.service-third:hover {
+    text-decoration-line: underline;
 }
 
 .category-third {
@@ -257,6 +269,10 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.service-fourth:hover {
+    text-decoration-line: underline;
+}
+
 .category-fourth {
     max-width: 280px;
     width: 100%;
@@ -286,6 +302,10 @@ h3 {
     background-repeat: no-repeat;
 }
 
+.service-fifth:hover {
+    text-decoration-line: underline;
+}
+
 .category-fifth {
     max-width: 280px;
     width: 100%;
@@ -313,6 +333,10 @@ h3 {
     margin: 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
+}
+
+.service-sixth:hover {
+    text-decoration-line: underline;
 }
 
 .category-sixth {
@@ -354,7 +378,6 @@ h3 {
 }
 
 /* FOOTER */
-
 footer {
     background-color:#434343;
     padding: 100px 110px;
@@ -406,7 +429,11 @@ footer {
     background: #666666;
     max-width: 300px;
     width: 100%;
-    padding: 9px 0 9px 15px;  
+    padding: 9px 0 9px 15px;
+}
+
+#footer-searching:hover {
+    border: 1px solid #FFFDFD;
 }
 
 ::placeholder {
@@ -439,13 +466,39 @@ footer {
 .footer-rating {
     display: flex;
     align-items: center;
+    padding: 0;
+}
+
+.stars {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .star {
+    background-image: url(Images/Star.png);
+    height: 17px;
+    width: 16px;
+    margin-bottom: 11px;
+    background-repeat: no-repeat;
     margin-right: 3px;
+    margin-bottom: 0;
+    
+}
+
+.star:hover {
+    background-image: url(Images/Star_active.png);
 }
 
 .DL {
     left: -75px;
     position: relative;
+    color: #A2A2A2;
+}
+
+.DL:hover {
+    text-decoration-line: underline;
+    color: #FFFFFF;
 }
