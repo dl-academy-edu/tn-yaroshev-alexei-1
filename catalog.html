@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>CATALOG</title>
-    <link rel="stylesheet" href="catalog.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/catalog.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head> 
 <body>
     <header class="header container">
@@ -29,33 +32,32 @@
             <h1 class="title">Category Products</h1>
                 <div>
                     <nav>
-                        <ul class="outline pointers">
+                        <ul class="outline breadcrumbs">
                             <li><a href="#" class="pointer-home">Home</a></li>
-                            <li><img src="Images/arrow-right.png" alt="" class="arrow"></li>
-                            <li><p class="pointer-catalog">Catalog</p></li>
+                            <li><a href="#" class="pointer-blog">Catalog</a></li>
                         </ul>
                     </nav>
                 </div>   
                 <div>
                     <ul class="categories-first">
                         <li> 
-                            <div class="category-first">
+                            <div class="category-first group">
                                 <a href="#">
-                                    <p class="service-first">APPAREL KIDS</p>
+                                    <p class="service-first block">APPAREL KIDS</p>
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <div class="category-second">
+                            <div class="category-second group">
                                 <a href="#">  
-                                    <p class="service-second">HOLIDAY SHOP</p>
+                                    <p class="service-second block">HOLIDAY SHOP</p>
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <div class="category-third">
+                            <div class="category-third group">
                                 <a href="#">
-                                    <p class="service-third">TOYS</p>
+                                    <p class="service-third block">TOYS</p>
                                 </a>
                             </div>
                         </li>
@@ -64,23 +66,23 @@
                 <div>
                     <ul class="categories-second">
                         <li>
-                            <div class="category-fourth">
+                            <div class="category-fourth group">
                                 <a href="#">
-                                    <p class="service-fourth">ACCESSORIES</p>
+                                    <p class="service-fourth block">ACCESSORIES</p>
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <div class="category-fifth">
+                            <div class="category-fifth group">
                                 <a href="#">
-                                    <p class="service-fifth">SALE</p>
+                                    <p class="service-fifth block">SALE</p>
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <div class="category-sixth">
+                            <div class="category-sixth group">
                                 <a href="#">
-                                    <p class="service-sixth">APPAREL ADULTS</p>
+                                    <p class="service-sixth block">APPAREL ADULTS</p>
                                 </a>
                             </div>
                         </li> 
@@ -129,7 +131,7 @@
                     <h4 class="footer-title">Connect</h4>
                     <img src="Images/Line.png" alt="" class="line">
                     <form action="#" class="footer-search">
-                        <input type="search" placeholder="Email" class="footer-searching">
+                        <input type="search" placeholder="Email" class="footer-searching" id="footer-searching">
                         <input type="button" value="JOIN" class="button">
                     </form>
                     <ul class="outline social">
@@ -170,29 +172,19 @@
             </div>
             <img src="images/Line-2.png" alt="" class="line-second">
             <div class="footer-second">
-                <div class="footer-rating">
-                    <h3 class="footer-link">Company Rating</h3>
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                        </svg>                                      
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                            <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                    </svg>
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                    </svg>
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                    </svg>
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
-                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                    </svg>
+                <div class="rating">
+                    <div class="star">★</div>
+                    <div class="star">★</div>
+                    <div class="star">★</div>
+                    <div class="star">★</div>
+                    <div class="star">★</div> 
+                    <h3 class="footer-company_rating star">Company Rating</h3>
                 </div>
                 <div>
-                    <h3 class="footer-link copyright">Copyright © 2018 Dlk • Design Life Kids</h3>
+                    <h3 class="footer-copyright">Copyright © 2018 Dlk • Design Life Kids</h3>
                 </div>
                 <div>
-                    <a href="#" class="footer-title DL">Web Design — Direct Line Development</a>
+                    <a href="#" class="footer-title dl">Web Design — Direct Line Development</a>
                 </div>
             </div>
         </footer>

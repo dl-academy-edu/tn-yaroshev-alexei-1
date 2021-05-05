@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Toys</title>
-    <link rel="stylesheet" href="toys.css">
+    <link rel="stylesheet" href="css/toys.css">
+    <link rel="stylesheet" href="css/toys.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head> 
 <body>
     <header class="header container">
@@ -28,12 +32,10 @@
         <h1 class="title">Toy for kids</h1>
         <div>
             <nav>
-                <ul class="outline pointers">
+                <ul class="outline breadcrumbs">
                     <li><a href="#" class="pointer-home">Home</a></li>
-                    <li><img src="Images/arrow-right.png" alt="" class="arrow-pages"></li>
                     <li><a href="#" class="pointer-home">Catalog</a></li>
-                    <li><img src="Images/arrow-right.png" alt="" class="arrow-pages"></li>
-                    <li><p class="pointer-blog">Toys</p></li>
+                    <li><a href="#" class="pointer-blog">Toys</a></li>
                 </ul>
             </nav>
         </div>
@@ -133,45 +135,50 @@
         </sidebar>
     </section>  
     <section class="products">
-        <div>
             <ul class="row">
-                <li>
-                    <div class="picture"><img src="Images/products/products1.png" alt=""></div>
+                <li class="row-picture">
+                    <a href="">
+                        <div class="picture"><img src="Images/products/products1.png" alt=""></div>
+                    </a>
                     <p class="text">SHARKY BEAN BAG CHAIR COVER</p>
                     <p class="rate"> $60.00 USD</p>
                 </li>
-                <li>
-                    <div class="picture"><img src="Images/products/products2.png" alt=""></div>
+                <li class="row-picture">
+                    <a href="">
+                        <div class="picture"><img src="Images/products/products2.png" alt=""></div>
+                    </a>
                     <p class="text">BRASS DECO FRAMES</p>
                     <p class="rate">$66.00 USD</p>
                 </li>
-                <li>
-                    <div class="picture"><img src="Images/products/products3.png" alt=""></div>
+                <li class="row-picture">
+                    <a href="">
+                        <div class="picture"><img src="Images/products/products3.png" alt=""></div>
+                    </a>
                     <p class="text">CIBO FULL APRON</p>
                     <p class="rate">$60.00 USD</p>
                 </li>
-            </ul>
-        </div>
-        <div>
-            <ul class="row">
-                <li>
-                    
-                    <div class="picture"><img src="Images/products/products4.png" alt=""></div>
+                <li class="row-picture">
+                    <a href="">
+                        <div class="picture"><img src="Images/products/products4.png" alt=""></div>
+                    </a>
                     <p class="text">GATCHA GATCHA GUMBALL MACHINE</p>
                     <p class="rate">$56.00 USD</p>
                 </li>
-                <li>
-                    <div class="picture"><img src="Images/products/products5.png" alt=""></div>
+                <li class="row-picture">
+                    <a href="">
+                        <div class="picture"><img src="Images/products/products5.png" alt=""></div>
+                    </a>
                     <p class="text">CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <p class="rate">$29.00 USD</p>
                 </li>
-                <li>
-                    <div class="picture"><img src="Images/products/products6.png" alt=""></div>
+                <li class="row-picture">
+                    <a href="">
+                        <div class="picture"><img src="Images/products/products6.png" alt=""></div>
+                    </a>
                     <p class="text">TANGLE SPINNING TEA LIGHT</p>
                     <p class="rate">$56.00 USD</p>
                 </li>
             </ul>
-        </div>
         <div class="under-products">
             <img src="Images/arrow-left.png" alt="" class="arrow">
             <ul class="pages">
@@ -255,41 +262,19 @@
         </div>
         <img src="images/Line-2.png" alt="" class="line-second">
         <div class="footer-second">
-            <div class="footer-rating">
-                <h3 class="footer-link rating">Company Rating</h3>
-                    <ul class="stars">
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="rating">
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div> 
+                <h3 class="footer-company_rating star">Company Rating</h3>
             </div>
             <div>
-                <h3 class="footer-link">Copyright © 2018 Dlk • Design Life Kids</h3>
+                <h3 class="footer-copyright">Copyright © 2018 Dlk • Design Life Kids</h3>
             </div>
             <div>
-                <a href="#" class="footer-title DL">Web Design — Direct Line Development</a>
+                <a href="#" class="footer-title dl">Web Design — Direct Line Development</a>
             </div>
         </div>
     </footer>

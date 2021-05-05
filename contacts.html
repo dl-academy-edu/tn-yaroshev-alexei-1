@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact us</title>
-    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contacts.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head> 
 <body>
     <header class="header container">
@@ -37,25 +41,25 @@
         </div>
         <div class="basic">
             <div>
-                <h1 class="hidden">Modal Window</h1>
+                <h1 class="hidden">Contacts</h1>
                 <form action="" method="POST" class="contact-form">
                     <fieldset class="contact-wrapper">
                         <label for="contact-name">Name</label>
-                        <input type="text" id="contact-name" placeholder="Ivan Ivanov">
+                        <input type="text" id="contact-name" placeholder="Ivan Ivanov" class="contact-name">
                     </fieldset> 
                     <fieldset class="contact-line">
                         <div class="contact-wrapper contact-block">
                             <label for="contact-phone">Phone</label>
-                            <input type="tel" id="contact-phone">    
+                            <input type="tel" id="contact-phone" class="contact-phone">    
                         </div>
                         <div class="contact-wrapper contact-block">
                             <label for="contant-email">E-mail</label>
-                            <input type="email" id="contant-email">
+                            <input type="email" id="contant-email" class="contant-email">
                         </div>
                     </fieldset>
                     <fieldset class="contact-wrapper">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="5" class="message"></textarea>
                     </fieldset>
                     <fieldset>
                         <div class="checkbox">
@@ -145,41 +149,19 @@
         </div>
         <img src="images/Line-2.png" alt="" class="line-second">
         <div class="footer-second">
-            <div class="footer-rating">
-                <h3 class="footer-link rating">Company Rating</h3>
-                    <ul class="stars">
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="star">
-                                <a href="#"></a>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="rating">
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div>
+                <div class="star">★</div> 
+                <h3 class="footer-company_rating star">Company Rating</h3>
             </div>
             <div>
-                <h3 class="footer-link">Copyright © 2018 Dlk • Design Life Kids</h3>
+                <h3 class="footer-copyright">Copyright © 2018 Dlk • Design Life Kids</h3>
             </div>
             <div>
-                <a href="#" class="footer-title DL">Web Design — Direct Line Development</a>
+                <a href="#" class="footer-title dl">Web Design — Direct Line Development</a>
             </div>
         </div>
     </footer>
