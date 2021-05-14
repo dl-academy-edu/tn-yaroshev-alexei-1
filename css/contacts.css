@@ -123,28 +123,23 @@ h3 {
     margin-bottom: 15px;
 }
 
-.pointers {
+.breadcrumbs {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 0; 
 }
 
 .pointer-home {
-    font-size: 20px;
-    line-height: 25px;
     font-style: italic;
-    font-family: 'Crimson Text', serif;
-    color: #1E0606;
 }
 
-.arrow {
-    margin-left: 113px;
-    margin-right: 113px;
-    max-width: 8px;
-    max-height: 12px;
-    width: 100%;
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
+.pointer-home::after {
+    content: '>'; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    color: #7f7f7f; 
 }
 
 .pointer-contact {
@@ -166,6 +161,7 @@ h3 {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
+
 
 .message:hover,
 .contact-name:hover,

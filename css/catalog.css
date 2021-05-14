@@ -141,10 +141,6 @@ h3 {
     font-style: italic;
 }
 
-.pointer-catalog {
-    opacity: 50%;
-}
-
 .categories-first {
     justify-content: flex-start;
     display: flex;

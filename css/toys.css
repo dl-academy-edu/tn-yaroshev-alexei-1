@@ -126,6 +126,7 @@ h3 {
 }
 
 /* HEADER */
+
 .header {
     padding: 40px 0 60px;
     display: flex;
@@ -351,7 +352,7 @@ h3 {
     color: #1E0606;
 }
 
-.under-products {
+.pagination {
     display: flex;
     justify-content: space-between;
 }
