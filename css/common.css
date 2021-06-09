@@ -1,0 +1,243 @@
+.container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E0606;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+a:active {
+    opacity: 20%;
+}
+
+img {
+    -webkit-display: block;
+        -moz-display: block;    
+            display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    overflow: hidden;
+    font-size: 0;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 40px 0 60px;
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center; 
+            align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header-logo {
+    max-width: 100px;
+}
+
+.header-nav {
+    margin: 0 auto 0 60px;
+}
+
+.header-list {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center; 
+            align-items: center;
+}
+
+.header-item {
+    margin-right: 20px;
+}
+
+.header-search {
+    margin-right: 23px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color:#434343;
+    padding: 100px 110px;
+    margin-top: 147px;
+}
+
+.footer-first {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    justify-content: space-between;
+}
+
+.footer-table {
+    max-width: 380px;
+    width: 100%;
+}
+
+.footer-copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: -50px;
+}
+
+.link {
+    margin-bottom: 15px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    color: #AAAAAA;
+    margin: 0;
+    margin-bottom: 22px;
+    border-bottom: #666666;
+    border-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 23px;
+}
+
+.line {
+    margin-top: 23px;
+    margin-bottom: 28px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.footer-search {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    max-width: 380px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+}
+
+.footer-searching {
+    background: #666666;
+    max-width: 300px;
+    width: 100%;
+    padding: 9px 0 9px 15px;
+}
+
+.footer-searching:hover {
+    border: 1px solid #FFFDFD;
+}
+
+.footer-searching::placeholder {
+    color: #EBEBEB;
+    max-width: 41px;
+    width: 100%;
+    max-height: 22px;
+    width: 100%; 
+}
+
+.social {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    margin-top: 35px;
+    margin-bottom: 116px;
+}
+
+.footer-social {
+    margin-right: 15px;
+}
+
+.footer-second {
+    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    padding-bottom: 23px;
+    border-top: #666666;
+    border-width: 1px;
+    border-top-style: solid;
+    padding-top: 23px;
+}
+
+.line-second {
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+
+.footer-link,
+.footer-company_rating {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center; 
+            align-items: center;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.rating {
+    -webkit-display: inline-flex;
+    -moz-display: inline-flex;    
+        display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+
+.star {
+    color: #FFFFFF;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.footer-company_rating {
+    margin-right: 25px;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: #836E5B;
+}
+
+.dl {
+    left: -155px;
+    position: relative;
+    color: #A2A2A2;
+    left: -80px;
+}
+
+.dl:hover {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
