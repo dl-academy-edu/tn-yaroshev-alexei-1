@@ -1,16 +1,52 @@
-.picture:hover::before {
-    content: 'Learn more';
+h2 {
+    margin: 0;
+    max-width: 68px;
+    margin-bottom: 15px;
+}
+
+.text, 
+.price,
+.picture:hover::before,
+.picture:active::before,
+.button,
+.breadcrumbs {
     -webkit-text-align: center;
-        -moz-text-align: center;    
+        -moz-text-align: center;  
             text-align: center;
+}
+
+.sidebar,
+.prices,
+.pagination,
+.pages  {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+}
+
+.fake-radio,
+.row-picture {
+    -webkit-display: inline-block;
+        -moz-display: inline-block;    
+            display: inline-block;
+}
+
+.color,
+.delivery,
+.amount {
+    margin-top: 42px;
+    
+}
+
+.picture:hover::before,
+.picture:active::before {
+    content: 'Learn more';
     text-transform: uppercase;
     color: #1E0606;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
     display: block;
     font-size: 26px;
-    line-height: 29px;  
-    max-width: 380px;
-    max-height: 385px;
+    line-height: 29px; 
     width: 100%;
     height: 100%;
     padding: 73px;  
@@ -18,38 +54,16 @@
     opacity: 90%;
     background: #E5EAF8;
     max-width: 100px;
-    width: 100%;
-    height: 100%;
     max-height: 100px;
-    opacity: 90%;
     margin: 70px;
 }
 
-.picture:active::before {
-    content: 'Learn more';
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
-    text-transform: uppercase;
-    color: #1E0606;
-    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-    display: block;
-    font-size: 26px;
-    line-height: 29px;  
-    max-width: 380px;
-    max-height: 385px;
-    width: 100%;
-    height: 100%;
-    padding: 73px;  
-    position: absolute;
+.picture:hover::before {
     opacity: 90%;
-    background: #E5EAF8;
-    max-width: 100px;
-    width: 100%;
-    height: 100%;
-    max-height: 100px;
+}
+
+.picture:active::before {    
     opacity: 0.67;
-    margin: 70px;
 }
 
 h3 {
@@ -69,9 +83,6 @@ h3 {
     font-size: 16px;
     line-height: 22px;
     max-width: 161px;
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
     padding: 9px;
     border: none;
     text-transform: uppercase;
@@ -90,7 +101,6 @@ h3 {
    background: #C1C1C1;
 }
 
-
 /* TOYS */
 
 .title {
@@ -104,84 +114,76 @@ h3 {
 
 .breadcrumbs {
     display: flex;
-    -webkit-align-items: center;
-        -moz-align-items: center;   
-            align-items: center;
     margin-bottom: 50px;
     padding: 0; 
 }
 
-.pointer-home {
-    font-style: italic;
-}
-
-.pointer-home::after {
-    content: '>'; 
-    margin-left: 20px; 
-    margin-right: 20px; 
-    color: #7f7f7f; 
-}
-
-.pointer-blog {
-    opacity: 50%;
-    font-style: italic;
-}
-
 .sidebar {
-    background-color:  rgba(125, 151, 218, 0.2);
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
-    -webkit-align-items: center;
-        -moz-align-items: center;   
-            align-items: center;
+    background-color:  rgba(125, 151, 218, 0.2); 
+    justify-content: space-between;
+    padding: 42px 125px;
 }
 
 .cost {
-    margin: 42px 94px 123px 110px;
+    margin: 42px 94px 123px 0px;
 }
 
-#start {
-    background: #C29974;
+.checkboxes {
+    margin-bottom: 18px;
 }
 
 .checkbox {
     list-style-type: none;
     padding: 0;
+    align-items: center;
 }
 
-.check {
-    -webkit-display: none;
-        -moz-display: none;    
-            display: none;
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 33px;
+    cursor: pointer;
 }
 
-.fake {
-    -webkit-display: inline-block;
-        -moz-display: inline-block;    
-            display: inline-block;
+.checkbox label:hover {
+    text-decoration-line: underline;
+}
+
+.checkbox label:before,
+.checkbox label:after  {
+    content: '';
+    position: absolute;
+}
+
+.checkbox label:before {
     width: 19px;
     height: 19px;
+    top: 0;
+    left: 0;
     border: 2px solid #C29974;
-    position: relative;
 }
-
-.fake::before  {
-    content: "";
-    position: absolute;
+.checkbox label:after {
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    left: 5px;
     background-repeat: no-repeat;
-    -webkit-display: block;
-        -moz-display: block;    
-            display: block;
-    width: 15px;
-    height: 15px;
     background-image: url("../images/check-mark.png");
     opacity: 0;
 }
 
-.check:checked + .fake::before {
+.input:checked + label:after {
     opacity: 1;
+} 
+
+.input:checked + label::before {
     background-color: #FFFFFF;
+}
+
+.input {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
 }
 
 .radios {
@@ -191,9 +193,6 @@ h3 {
 }
 
 .fake-radio {
-    -webkit-display: inline-block;
-        -moz-display: inline-block;    
-            display: inline-block;
     width: 20px;
     height: 20px;
     border: 2px solid #C29974;
@@ -223,7 +222,6 @@ h3 {
 .delivery {
     margin-left: 130px;
     position: relative;
-    top: -20px;
 }
 
 .radio {
@@ -235,14 +233,10 @@ h3 {
     margin-left: 70px;
     margin-right: 60px;
     position: relative;
-    top: -20px;
 }
 
 .prices {
     list-style-type: none;
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     padding: 0;
 }
 
@@ -268,7 +262,7 @@ h3 {
     width: 100%;
     max-height: 40px;
     height: 100%;
-    position: relative;
+    margin-top: 79px;
 }
 
 /* PRODUCTS */
@@ -278,49 +272,29 @@ h3 {
     list-style-type: none;
 }
 
-.row-picture {
-    -webkit-display: inline-block;
-        -moz-display: inline-block;    
-            display: inline-block;
-}
-
 .text {
-    -webkit-text-align: center;
-        -moz-text-align: center;  
-            text-align: center;
+    
     font-size: 14px;
     line-height: 19px;
-    -webkit-text-align: center;
-        -moz-text-align: center;  
-            text-align: center;
     font-family: 'Open Sans', sans-serif;
     margin-top: 30px;
     color: #1E0606;
     font-weight: normal;
 }
 
-.rate {
+.price {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
-    -webkit-text-align: center;
-        -moz-text-align: center;  
-            text-align: center;
     color: #1E0606;
 }
 
 .pagination {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     justify-content: space-between;
 }
 
 .pages {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     list-style-type: none;
     justify-content: space-around;
 }

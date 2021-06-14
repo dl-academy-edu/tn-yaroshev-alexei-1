@@ -1,3 +1,12 @@
+.breadcrumbs,
+.blog-articles,
+.pagination,
+.pages {
+    -webkit-display: flex;
+    -moz-display: flex;    
+        display: flex;
+}
+
 
 h3 {
     margin: 0;
@@ -51,9 +60,6 @@ h3 {
 }
 
 .breadcrumbs {
-    -webkit-display: flex;
-    -moz-display: flex;    
-        display: flex;
     -webkit-align-items: center;
         -moz-align-items: center;
             align-items: center;
@@ -61,21 +67,6 @@ h3 {
     padding: 0; 
 }
 
-.pointer-home {
-    font-style: italic;
-}
-
-.pointer-home::after {
-    content: '>'; 
-    margin-left: 20px; 
-    margin-right: 20px; 
-    color: #7f7f7f; 
-}
-
-.pointer-blog {
-    opacity: 50%;
-    font-style: italic;
-}
 
 .arrow {
     margin: 0 20px;
@@ -88,9 +79,6 @@ h3 {
 .blog-articles  {
     list-style-type: none;
     padding: 0;
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     flex-flow: row wrap;
 }
 
@@ -138,9 +126,6 @@ h3 {
 }
 
 .pagination {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     justify-content: space-between;
 }
 
@@ -151,9 +136,6 @@ h3 {
 }
 
 .pages {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     list-style-type: none;
     justify-content: space-around;
 }

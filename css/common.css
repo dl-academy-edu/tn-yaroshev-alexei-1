@@ -85,6 +85,23 @@ img {
     margin-right: 23px;
 }
 
+.pointer-home {
+    font-style: italic;
+}
+
+.pointer-home::after {
+    content: '>'; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    color: #7f7f7f; 
+}
+
+.pointer-next {
+    opacity: 50%;
+    font-style: italic;
+    margin: 0;
+}
+
 /* FOOTER */
 
 footer {
@@ -207,22 +224,22 @@ footer {
     color: #FFFFFF;
 }
 
-.rating {
+.rating-one {
+    display: flex;
+}
+
+.rating-two {
     -webkit-display: inline-flex;
     -moz-display: inline-flex;    
         display: inline-flex;
     flex-direction: row-reverse;
+    list-style-type: none;
 }
-
 
 .star {
     color: #FFFFFF;
     margin-right: 3px;
     cursor: pointer;
-}
-
-.footer-company_rating {
-    margin-right: 25px;
 }
 
 .star:hover,

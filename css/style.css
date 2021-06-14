@@ -1,6 +1,50 @@
+.button,
+.undertable-text,
+.block,
+.group,
+.contact-title,
+.contact-title {
+    -webkit-text-align: center;
+        -moz-text-align: center;    
+            text-align: center;
+}
+
+.button,
+.checkbox label:before,
+.checkbox label:after {
+    -webkit-display: block;
+        -moz-display: block;    
+            display: block;
+}
+
+.banner-main,
+.category,
+.underservice,
+.arrows,
+.about,
+.brands-outline,
+.contacts,
+.contact-form fieldset,
+.contact-wrapper,
+.contact-line {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+}
+
+
+.input,
+.popup-overlay,
+.popup-form {
+    -webkit-display: none;
+        -moz-display: none;    
+            display: none;
+}
+
 h3 {
     margin: 0;
 }
+
 .outline {
     list-style-type: none;
     padding: 0;
@@ -14,15 +58,9 @@ h3 {
     font-size: 16px;
     line-height: 22px;
     max-width: 161px;
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
     padding: 9px;
     border: none;
     text-transform: uppercase;
-    -webkit-display: block;
-        -moz-display: block;    
-            display: block;
 }
 
 .button:hover {
@@ -44,9 +82,6 @@ h3 {
 /* BANNER */
 
 .banner-main {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     max-width: 1180px;
     width: 100%;
     max-height: 372px;
@@ -54,12 +89,12 @@ h3 {
 }
 
 
-.table {
+.slide {
     max-width: 31px;
     max-height: 11px;
 }
 
-.table-button-special {
+.slide-button-special {
     background-color:  rgba(30, 6, 6, 0.6);
     height: 3px;
     width: 31px;
@@ -67,7 +102,7 @@ h3 {
     border: 0px;
 }
 
-.table-button {
+.slide-button {
     background-color: #D6CAC2;
     height: 3px;
     width: 31px;
@@ -75,13 +110,13 @@ h3 {
     border: 0px;
 }
 
-.table-button:hover {
+.slide-button:hover {
     background-color: #725F5B;
     height: 3px;
     width: 31px;
 }
 
-.table-number {
+.slide-number {
     padding: 17px 44px 0 28px;
 }
 
@@ -94,7 +129,7 @@ h3 {
     margin: 0;
 }
 
-.table-name {
+.slide-name {
     margin-top: 89px;
     margin-right: 5px;
     max-width: 308px;
@@ -134,9 +169,6 @@ h3 {
 
 .undertable-text {
     margin: 0;
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
@@ -163,9 +195,6 @@ h3 {
 }
 
 .category {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     max-width: 1180px;
     width: 100%;
 }
@@ -179,9 +208,6 @@ h3 {
 
 .block {
     max-width: 244px;
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
     text-transform: uppercase;
     max-height: 244px;
     height: 100%;
@@ -198,9 +224,6 @@ h3 {
     max-width: 280px;
     width: 100%;
     max-height: 270px;
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
     margin-right: 35px;
 }
 
@@ -258,19 +281,10 @@ h3 {
 }
 
 .underservice {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     -webkit-align-items: center;
         -moz-align-items: center;    
             align-items: center;
     margin-top: 25px;
-}
-
-.arrows {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
 }
 
 .arrow1 {
@@ -300,15 +314,10 @@ h3 {
 /* ABOUT */
 
 .about {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     margin-top: 70px;
 }
 
-.about-first {
-    margin-left: 40px;
-}
+
 
 .about-logo {
     max-width: 480px;
@@ -358,9 +367,6 @@ h3 {
 }
 
 .brands-outline {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     list-style-type: none;
     margin-top: 90px;
     margin-bottom: 90px;
@@ -372,12 +378,6 @@ h3 {
 
 
 /* CONTACTS */
-
-.contacts {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
-}
 
 .contacts-first {
     background-color: #E1F0F7;
@@ -438,9 +438,6 @@ h3 {
 
 .contact-form fieldset {
     border: none;
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
@@ -475,19 +472,10 @@ h3 {
     cursor: pointer;
 }
 
-.input {
-    -webkit-display: none;
-        -moz-display: none;    
-            display: none;
-}
-
 .checkbox label:before,
 .checkbox label:after  {
     content: '';
     position: absolute;
-    -webkit-display: block;
-        -moz-display: block;    
-            display: block;
 }
 
 .checkbox label:before {
@@ -515,17 +503,11 @@ h3 {
     font-weight: 900;
     font-size: 50px;
     line-height: 97.2%;
-    -webkit-text-align: center;
-        -moz-text-align: center;    
-            text-align: center;
     color: #00559D;
     margin-bottom: 60px;
 }
 
 .contact-wrapper {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     flex-direction: column;
 }
 
@@ -535,9 +517,6 @@ h3 {
 }
 
 .contact-line {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     justify-content: space-between;
 }
 
@@ -548,9 +527,6 @@ h3 {
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-display: none;
-        -moz-display: none;    
-            display: none;
 }
 
 .popup-form {
@@ -559,9 +535,6 @@ h3 {
     left: 50%;
     transform: translate(-50%,-50%);
     width: 680px;
-    -webkit-display: none;
-        -moz-display: none;    
-            display: none;
 }
 
 .popup-open,

@@ -28,14 +28,16 @@
         <a href="#" class="header-contact">CONTACT US</a>
     </header>
     <main>
-    <section class="toys container">
-        <h1 class="title">Toy for kids</h1>
-        <div>
-            <ul class="outline breadcrumbs">
-                <li><p class="pointer-home">Home</p></li>
-                <li><a href="#" class="pointer-home">Catalog</a></li>
-                <li><a href="#" class="pointer-blog">Toys</a></li>
-            </ul>
+    <section class="toys">
+        <div class="container">
+            <h1 class="title">Toy for kids</h1>
+            <div>
+                <ul class="outline breadcrumbs">
+                    <li><a href="#" class="pointer-home">Home</a></li>
+                    <li><a href="#" class="pointer-home">Catalog</a></li>
+                    <li><p class="pointer-next">Toys</p></li>
+                </ul>
+            </div>
         </div>
         <div class="sidebar">
             <div class="cost">
@@ -49,48 +51,32 @@
                     <circle cx="51" cy="12" r="3.65217" fill="white"/>
                     </svg>
             </div>
-            <div>
+            <div class="color">
                 <h2>Color</h2>
                     <ul class="checkbox">
-                        <li>
-                            <label>
-                                <input name="black"
-                                       type="checkbox"
-                                       value="black"
-                                       class="check">
-                                <span class="fake"></span>
-                                <span>Black</span>    
-                            </label>
+                        <li class="checkboxes">
+                            <div class="checkbox">
+                                <input class="input" type="checkbox" id="contant-cach-1" checked>
+                            <label for="contant-cach-1">Black</label>                                                    
+                            </div>
                         </li>
-                        <li>
-                            <label>
-                                <input name="blue"
-                                       type="checkbox"
-                                       value="blue"
-                                       class="check">
-                                <span class="fake"></span>
-                                <span>Blue</span> 
-                            </label>
+                        <li class="checkboxes">
+                            <div class="checkbox">
+                                <input class="input" type="checkbox" id="contant-cach-2">
+                            <label for="contant-cach-2">Blue</label>                                                    
+                            </div>
                         </li>
-                        <li>
-                            <label>
-                                <input name="green"
-                                       type="checkbox"
-                                       value="green"
-                                       class="check">
-                                <span class="fake"></span>
-                                <span>Green</span>
-                            </label>
+                        <li class="checkboxes">
+                            <div class="checkbox">
+                                <input class="input" type="checkbox" id="contant-cach-3">
+                            <label for="contant-cach-3">Green</label>                                                    
+                            </div>
                         </li>
-                        <li>
-                            <label>
-                                <input name="white"
-                                       type="checkbox"
-                                       value="white"
-                                       class="check">
-                                <span class="fake"></span>
-                                <span>White</span>
-                            </label>
+                        <li class="checkboxes">
+                            <div class="checkbox">
+                                <input class="input" type="checkbox" id="contant-cach-4">
+                            <label for="contant-cach-4">White</label>                                                    
+                            </div>
                         </li>
                     </ul>
             </div>
@@ -133,50 +119,50 @@
         </div>
     </section>  
     <section class="products container">
-            <ul class="row">
-                <li class="row-picture">
-                    <a href="">
-                        <div class="picture"><img src="../images/products/products1.png" alt="" width="380" height="385"></div>
-                    </a>
-                    <p class="text">SHARKY BEAN BAG CHAIR COVER</p>
-                    <p class="rate"> $60.00 USD</p>
-                </li>
-                <li class="row-picture">
-                    <a href="">
-                        <div class="picture"><img src="../images/products/products2.png" alt="" width="380" height="385"></div>
-                    </a>
-                    <p class="text">BRASS DECO FRAMES</p>
-                    <p class="rate">$66.00 USD</p>
-                </li>
-                <li class="row-picture">
-                    <a href="">
-                        <div class="picture"><img src="../images/products/products3.png" alt="" width="380" height="385"></div>
-                    </a>
-                    <p class="text">CIBO FULL APRON</p>
-                    <p class="rate">$60.00 USD</p>
-                </li>
-                <li class="row-picture">
-                    <a href="">
-                        <div class="picture"><img src="../images/products/products4.png" alt="" width="380" height="385"></div>
-                    </a>
-                    <p class="text">GATCHA GATCHA GUMBALL MACHINE</p>
-                    <p class="rate">$56.00 USD</p>
-                </li>
-                <li class="row-picture">
-                    <a href="">
-                        <div class="picture"><img src="../images/products/products5.png" alt="" width="380" height="385"></div>
-                    </a>
-                    <p class="text">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                    <p class="rate">$29.00 USD</p>
-                </li>
-                <li class="row-picture">
-                    <a href="">
-                        <div class="picture"><img src="../images/products/products6.png" alt="" width="380" height="382"></div>
-                    </a>
-                    <p class="text">TANGLE SPINNING TEA LIGHT</p>
-                    <p class="rate">$56.00 USD</p>
-                </li>
-            </ul>
+        <ul class="row">
+            <li class="row-picture">
+                <a href="">
+                    <div class="picture"><img src="../images/products/products1.png" alt="" width="380" height="385"></div>
+                </a>
+                <h3 class="text">SHARKY BEAN BAG CHAIR COVER</h3>
+                <div class="price"> $60.00 USD</div>
+            </li>
+            <li class="row-picture">
+                <a href="">
+                    <div class="picture"><img src="../images/products/products2.png" alt="" width="380" height="385"></div>
+                </a>
+                <h3 class="text">BRASS DECO FRAMES</h3>
+                <div class="price">$66.00 USD</div>
+            </li>
+            <li class="row-picture">
+                <a href="">
+                    <div class="picture"><img src="../images/products/products3.png" alt="" width="380" height="385"></div>
+                </a>
+                <h3 class="text">CIBO FULL APRON</h3>
+                <div class="price">$60.00 USD</div>
+            </li>
+            <li class="row-picture">
+                <a href="">
+                    <div class="picture"><img src="../images/products/products4.png" alt="" width="380" height="385"></div>
+                </a>
+                <h3 class="text">GATCHA GATCHA GUMBALL MACHINE</h3>
+                <div class="price">$56.00 USD</div>
+            </li>
+            <li class="row-picture">
+                <a href="">
+                    <div class="picture"><img src="../images/products/products5.png" alt="" width="380" height="385"></div>
+                </a>
+                <h3 class="text">CHRISTMAS ADVENT SCENTED CANDLE</h3>
+                <div class="price">$29.00 USD</div>
+            </li>
+            <li class="row-picture">
+                <a href="">
+                    <div class="picture"><img src="../images/products/products6.png" alt="" width="380" height="382"></div>
+                </a>
+                <h3 class="text">TANGLE SPINNING TEA LIGHT</h3>
+                <div class="price">$56.00 USD</div>
+            </li>
+        </ul>
         <div class="pagination">
             <img src="../images/arrow-left.png" alt="" width="13" height="26" class="arrow">
             <ul class="pages">
@@ -256,13 +242,15 @@
             </div>
         </div>
         <div class="footer-second">
-            <div class="rating">
-                <div class="star">★</div>
-                <div class="star">★</div>
-                <div class="star">★</div>
-                <div class="star">★</div>
-                <div class="star">★</div> 
+            <div class="rating-one">
                 <h3 class="footer-company_rating star">Company Rating</h3>
+                <ul class="rating-two">
+                    <li class="star">★</li>
+                    <li class="star">★</li>
+                    <li class="star">★</li>
+                    <li class="star">★</li>
+                    <li class="star">★</li>
+                </ul>
             </div>
             <h3 class="footer-copyright">Copyright © 2018 Dlk • Design Life Kids</h3>
             <a href="#" class="dl">Web Design — Direct Line Development</a>
