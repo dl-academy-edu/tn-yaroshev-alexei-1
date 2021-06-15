@@ -4,33 +4,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-.text, 
-.price,
-.picture:hover::before,
-.picture:active::before,
-.button,
-.breadcrumbs {
-    -webkit-text-align: center;
-        -moz-text-align: center;  
-            text-align: center;
-}
-
-.sidebar,
-.prices,
-.pagination,
-.pages  {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
-}
-
-.fake-radio,
-.row-picture {
-    -webkit-display: inline-block;
-        -moz-display: inline-block;    
-            display: inline-block;
-}
-
 .color,
 .delivery,
 .amount {
@@ -186,12 +159,6 @@ h3 {
             appearance: none;
 }
 
-.radios {
-    -webkit-display: none;
-        -moz-display: none;    
-            display: none;
-}
-
 .fake-radio {
     width: 20px;
     height: 20px;
@@ -203,9 +170,6 @@ h3 {
 .fake-radio::before {
     content: "";
     position: absolute;
-    -webkit-display: block;
-        -moz-display: block;    
-            display: block;
     width: 13px;
     height: 13px;
     top: 15%;
@@ -272,14 +236,14 @@ h3 {
     list-style-type: none;
 }
 
-.text {
-    
+.description {
     font-size: 14px;
     line-height: 19px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 30px;
     color: #1E0606;
     font-weight: normal;
+    margin-bottom: 15px;
 }
 
 .price {
@@ -288,6 +252,7 @@ h3 {
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+    margin-bottom: 78px;
 }
 
 .pagination {

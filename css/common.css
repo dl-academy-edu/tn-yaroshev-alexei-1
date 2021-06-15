@@ -1,3 +1,104 @@
+.button,
+.undertable-text,
+.block,
+.group,
+.description, 
+.price,
+.picture:hover::before,
+.picture:active::before,
+.breadcrumbs,
+.contact-title,
+.contact-title {
+    -webkit-text-align: center;
+        -moz-text-align: center;    
+            text-align: center;
+}
+
+img,
+.button,
+.checkbox label:before,
+.checkbox label:after,
+.fake-radio::before,
+.popup-open,
+.popup-overlay-open {
+    -webkit-display: block;
+        -moz-display: block;    
+            display: block;
+}
+
+
+.input,
+.popup-overlay,
+.popup-form,
+.radios {
+    -webkit-display: none;
+        -moz-display: none;    
+            display: none;
+}
+
+
+.breadcrumbs,
+.sidebar,
+.category,
+.categories-first,
+.categories-second,
+.blog-articles,
+.contacts,
+.contact-form fieldset,
+.contact-wrapper,
+.contact-line,
+.banner-main,
+.underservice,
+.arrows,
+.about,
+.brands-outline,
+.prices,
+.rating-one,
+.pagination,
+.pages,
+.header,
+.header-list,
+.footer-first,
+.footer-search,
+.social,
+.footer-second,
+.footer-link,
+.footer-company_rating  {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+}
+
+
+
+
+.fake-radio,
+.row-picture {
+    -webkit-display: inline-block;
+        -moz-display: inline-block;    
+            display: inline-block;
+}
+
+
+
+
+.breadcrumbs,
+.group,
+.header,
+.header-list,
+.footer-link,
+.footer-company_rating,
+.underservice {
+    -webkit-align-items: center;
+        -moz-align-items: center; 
+            align-items: center;
+}
+
+
+h3 {
+    margin: 0;
+}
+
 .container {
     max-width: 1220px;
     width: 100%;
@@ -32,9 +133,6 @@ a:active {
 }
 
 img {
-    -webkit-display: block;
-        -moz-display: block;    
-            display: block;
     max-width: 100%;
     height: auto;
 }
@@ -49,12 +147,6 @@ img {
 
 .header {
     padding: 40px 0 60px;
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
-    -webkit-align-items: center;
-        -moz-align-items: center; 
-            align-items: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -66,15 +158,6 @@ img {
 
 .header-nav {
     margin: 0 auto 0 60px;
-}
-
-.header-list {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
-    -webkit-align-items: center;
-        -moz-align-items: center; 
-            align-items: center;
 }
 
 .header-item {
@@ -111,9 +194,6 @@ footer {
 }
 
 .footer-first {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     justify-content: space-between;
 }
 
@@ -155,9 +235,6 @@ footer {
 }
 
 .footer-search {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     max-width: 380px;
     width: 100%;
     max-height: 40px;
@@ -184,9 +261,6 @@ footer {
 }
 
 .social {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     margin-top: 35px;
     margin-bottom: 116px;
 }
@@ -196,15 +270,12 @@ footer {
 }
 
 .footer-second {
-    justify-content: space-between;
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
     padding-bottom: 23px;
     border-top: #666666;
     border-width: 1px;
     border-top-style: solid;
     padding-top: 23px;
+    justify-content: space-between;
 }
 
 .line-second {
@@ -214,18 +285,12 @@ footer {
 
 .footer-link,
 .footer-company_rating {
-    -webkit-display: flex;
-        -moz-display: flex;    
-            display: flex;
-    -webkit-align-items: center;
-        -moz-align-items: center; 
-            align-items: center;
     padding: 0;
     color: #FFFFFF;
 }
 
-.rating-one {
-    display: flex;
+.footer-company_rating {
+    margin-bottom: 20px;
 }
 
 .rating-two {
@@ -234,6 +299,11 @@ footer {
         display: inline-flex;
     flex-direction: row-reverse;
     list-style-type: none;
+    margin-top: 0;
+}
+
+.rating-one {
+    padding-top: 0;
 }
 
 .star {
